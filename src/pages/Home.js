@@ -21,7 +21,7 @@ const Home = () => {
           Skilled in HTML, CSS, JavaScript, Node.js, Express, React, SQL, Python, and Java, I thrive in collaborative environments and 
           am committed to continuous learning. My aim is to contribute to impactful projects while advancing my career in tech.
           </p>
-            <Button variant="light" href="/resume">View Resume</Button>
+            <Button variant="light" href="/About">More About Me</Button>
           </Col>
         </Row>
       </Container>
