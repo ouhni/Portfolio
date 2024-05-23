@@ -1,43 +1,54 @@
-/* body, html {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-} */
-/* Ensures that the container takes up the full height of the screen */
+}
+
 #root {
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
+
 /* Styles for the main content area */
 .content {
   flex: 1;
+  display: flex;
   padding: 60px;
+  flex-direction: column;
+  /* min-height: 100vh; */
 }
+
 /* Footer styles */
 .footer {
-  /* background-color: #50727B ; */
+  background-color: #222831;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
+
 .footer p {
   margin: 0;
+  font-size: 1.4rem; /* Increase the font size */
 }
+
 .footer .social-links {
   margin-top: 10px;
 }
+
 .footer .social-links a {
   color: white;
-  margin: 0 10px;
+  margin: 0 25px; /* Increase margin for more space */
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
+
 .footer .social-links a:hover {
   text-decoration: underline;
 }
-.bg-dark {
-  background-color: #222831 !important;
+
+.footer .social-icon {
+  margin-right: 8px; /* Add space between icon and text */
+  font-size: 2.2rem; /* Adjust icon size */
 }

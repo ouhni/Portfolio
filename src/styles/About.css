@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .about-container {
+    background-color: #344955; /* Background color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%; /* Container width */
+    margin: auto; /* Center the container */
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Make buttons wrap in smaller screens */
+  }
+  
+  .button-group .btn {
+    margin-right: 30px; /* Spacing between buttons */
+    margin-bottom: 10px; /* Space below buttons for wrap */
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      width: 90%; /* Reduce container width on smaller screens */
+      text-align: center;
+    }
+  
+    .about-image {
+      margin-bottom: 20px;
+    }
+  
+    .button-group {
+      justify-content: center;
+    }
+  
+    .button-group .btn {
+      margin-right: 10px; /* Reduce margin between buttons on smaller screens */
+    }
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #222831;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+  }
+  
+  .footer .social-links {
+    margin-top: 10px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .social-links .social-icon {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
