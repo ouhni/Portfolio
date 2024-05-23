@@ -37,7 +37,7 @@ html, body {
   }
   
   .button-group .btn {
-    margin-right: 30px; /* Spacing between buttons */
+    margin-right: 20px; /* Spacing between buttons */
     margin-bottom: 10px; /* Space below buttons for wrap */
   }
   

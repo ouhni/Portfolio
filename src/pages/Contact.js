@@ -1,57 +1,50 @@
-import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Container, Form, Button, Alert } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
+import '../styles/Contact.css';
+
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-  const handleSubmit = (e) => {
+  const form = useRef();
+  const navigate = useNavigate();
+  const [formError, setFormError] = useState('');
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Implement form submission logic here
-    alert('Form submitted!');
+    emailjs.sendForm('service_ezyn0xd', 'template_sw73awh', form.current, {
+      publicKey: '383udVgl7aBzDgWpR'
+    })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setFormError('');
+          e.target.reset();
+          navigate('/confirmation');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setFormError('Failed to send message. Please try again later.');
+        }
+      );
   };
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 contact">
       <h1>Contact</h1>
-      <Form onSubmit={handleSubmit}>
+      {formError && <Alert variant="danger">{formError}</Alert>}
+      <Form ref={form} onSubmit={sendEmail}>
         <Form.Group controlId="formName">
           <Form.Label>Name</Form.Label>
-          <Form.Control
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Enter your name"
-          />
+          <Form.Control type="text" name="user_name" placeholder="Enter your name" required />
         </Form.Group>
         <Form.Group controlId="formEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Enter your email"
-          />
+          <Form.Control type="email" name="user_email" placeholder="Enter your email" required />
         </Form.Group>
         <Form.Group controlId="formMessage">
           <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows={3}
-            placeholder="Enter your message"
-          />
+          <Form.Control as="textarea" name="message" rows={3} placeholder="Enter your message" required />
         </Form.Group>
         <Button variant="primary" type="submit" className="mt-3">
-          Submit
+          Send
         </Button>
       </Form>
     </Container>
