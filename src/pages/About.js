@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import profilePhoto from '../assets/images/Yassine_Profile_Photo.png'; // Adjust the path as needed
+import profilePhoto from '../assets/images/Yassine_Profile_2_Photo.png'; // Adjust the path as needed
 import '../styles/About.css';
 
 const About = () => {
@@ -13,10 +13,20 @@ const About = () => {
           </Col>
           <Col md={6}>
             <h1>About Me</h1>
+
             <p>
-              I have a background in supporting academic and IT environments, with experience in Harvard University’s IT departments. I am skilled in technical support, front desk assistance, and customer service. 
-              I have a Bachelor’s degree in Computer Science from Boston University and completed an Information Technology Track at Year Up.
+            I'm Yassine, a recent Computer Science graduate deeply passionate about web development and software engineering. My journey into the world of technology began six years ago with an enriching experience at Year Up. There, as an IT technician, I immersed myself in hardware intricacies, laying the groundwork for my fascination with software development.
             </p>
+            <p>
+            Transitioning to coding, I eagerly pursued a deeper understanding, which led me to Boston University. Through its comprehensive curriculum, I mastered programming languages and web development, fueling my passion and propelling me towards becoming a proficient software engineer.
+            </p>
+            <p>
+            Now equipped with a solid foundation in both hardware and software, I'm excited to embark on the next chapter of my career. As a web developer or software engineer, I'm eager to leverage my diverse skill set and passion for technology to create innovative solutions that make a meaningful impact.
+            </p>
+            <p>
+            Beyond my academic and professional pursuits, I enjoy soccer, experimenting with cuisines in the kitchen, and leisurely walks under the sun.  
+            </p>
+
             <div className="button-group mt-4">
               <Button variant="primary" href="/path/to/cv" className="mr-2">Download CV</Button>
               <Button variant="secondary" href="/projects" className="mr-2">My Projects</Button>

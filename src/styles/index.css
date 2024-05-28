@@ -14,7 +14,7 @@ html, body {
 .content {
   flex: 1;
   display: flex;
-  padding: 60px;
+  padding: 30px;
   flex-direction: column;
   /* min-height: 100vh; */
 }

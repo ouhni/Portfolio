@@ -1,11 +1,15 @@
 .custom-navbar {
-    background-color: #222831; /* Primary Color */
+    background-color: #222831;
     /* border-bottom: 2px solid #0D6EFD; Accent Color */
     padding: 0.5rem 1rem;
   }
 
   button.navbar-toggler.collapsed {
-    color: red;
+    background-color: #FFFFFF;
+  }
+
+  button.navbar-toggler {
+    background-color: #FFFFFF;
   }
   
   .navbar-brand {
