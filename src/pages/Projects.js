@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Carousel } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
+import '../styles/Projects.css';
 
 import memoryGame1 from '../assets/images/Memory_Game_Pic_1.png';
 import memoryGame2 from '../assets/images/Memory_Game_Pic_2.png';
