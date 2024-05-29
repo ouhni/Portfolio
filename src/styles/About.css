@@ -1,94 +1,99 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 30px 60px; /* 30px top and bottom, 60px left and right */
+  box-sizing: border-box; /* Ensure padding does not affect total width */
+}
+
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #344955; /* Background color */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Full width inside the content padding */
+  margin: auto; /* Center the container */
+}
+
+.about-image {
+  width: 100%;
+  max-width: 450px; /* Increased max width to make the image larger */
+  height: auto;
+  border-radius: 8px;
+}
+
+about p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #f8f9fa; /* This is the Bootstrap light color */
+  text-align: left;
+}
+#root > div > footer > div > div > div > p {
+  text-align: center;
+}
+
+.button-group .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #F6B17A;
+  color: #344955;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-right: 50px; /* Spacing between buttons */
+  margin-bottom: 10px; /* Space below buttons for wrap */
+}
+
+#root > div > div > div > div > div > div:nth-child(2) > div {
+  align-items: center;
+}
+
+.button-group .btn:last-child {
+  margin-right: 0; /* Remove margin-right for the last button */
+}
+
+.button-group {
+  justify-content: center; /* Center buttons */
+}
+
+.button-group .btn:hover {
+  background-color: #FBFADA;
+}
+
+@media (max-width: 768px) {
   .content {
-    flex: 1;
-    /* padding: 0px; */
+    padding: 30px 30px; /* Reduce left and right padding on smaller screens */
   }
-  
+
   .about-container {
-    background-color: #344955; /* Background color */
-    padding: 20px;
-    border-radius: 10px;
-    width: 70%; /* Container width */
-    margin: auto; /* Center the container */
-  }
-  
-  .about-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .button-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap; /* Make buttons wrap in smaller screens */
-  }
-  
-  .button-group .btn {
-    margin-right: 20px; /* Spacing between buttons */
-    margin-bottom: 10px; /* Space below buttons for wrap */
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      width: 90%; /* Reduce container width on smaller screens */
-      text-align: center;
-    }
-  
-    .about-image {
-      margin-bottom: 20px;
-    }
-  
-    .button-group {
-      justify-content: center;
-    }
-  
-    .button-group .btn {
-      margin-right: 10px; /* Reduce margin between buttons on smaller screens */
-    }
-  }
-  
-  /* Footer styles */
-  .footer {
-    background-color: #222831;
-    color: white;
+    width: 100%; /* Full width inside the content padding */
     text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
   }
-  
-  .footer p {
-    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+
+  .about-image {
+    margin-bottom: 20px;
   }
-  
-  .footer .social-links {
-    margin-top: 10px;
+
+  p {
+    font-size: 1rem;
   }
-  
-  .footer .social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+
+  .button-group .btn {
+    margin-right: 10px; /* Reduce margin between buttons on smaller screens */
   }
-  
-  .footer .social-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer .social-links .social-icon {
-    margin-right: 5px; /* Space between icon and text */
-  }
-  
+}

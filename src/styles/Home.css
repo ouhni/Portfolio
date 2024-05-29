@@ -2,6 +2,7 @@
     min-height: 80vh; /* Ensure the section covers the full height of the viewport */
     display: flex;
     align-items: center;
+    /* flex-direction: row; */
     padding: 20px; /* Optional padding for spacing */
 }
 
