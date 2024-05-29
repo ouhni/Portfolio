@@ -10,35 +10,48 @@ html, body {
   min-height: 100vh;
 }
 
+p {
+  align-items: left;
+}
+
 .content {
   flex: 1;
-  padding: 30px 60px; /* 30px top and bottom, 60px left and right */
-  box-sizing: border-box; /* Ensure padding does not affect total width */
+  padding: 30px 60px; 
+  box-sizing: border-box;
+}
+
+#root > div > div > div {
+  padding: 0px;
+}
+
+#root > div > div {
+  padding-top: 0px;
 }
 
 .about-container {
   min-height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background-color: #344955; /* Background color */
+  background-color: #344955;
   padding: 20px;
   border-radius: 10px;
-  width: 100%; /* Full width inside the content padding */
-  margin: auto; /* Center the container */
+  width: 100%; 
+  margin: auto; 
 }
 
 .about-image {
   width: 100%;
-  max-width: 450px; /* Increased max width to make the image larger */
+  max-width: 450px; 
   height: auto;
   border-radius: 8px;
 }
 
-about p {
+.about p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.6;
-  color: #f8f9fa; /* This is the Bootstrap light color */
+  color: #f8f9fa; 
   text-align: left;
 }
 #root > div > footer > div > div > div > p {
@@ -55,20 +68,20 @@ about p {
   text-decoration: none;
   font-size: 1rem;
   transition: background-color 0.3s ease;
-  margin-right: 50px; /* Spacing between buttons */
-  margin-bottom: 10px; /* Space below buttons for wrap */
+  margin-right: 50px; 
+  margin-bottom: 10px; 
 }
 
 #root > div > div > div > div > div > div:nth-child(2) > div {
-  align-items: center;
+  align-items: left;
 }
 
 .button-group .btn:last-child {
-  margin-right: 0; /* Remove margin-right for the last button */
+  margin-right: 0; 
 }
 
 .button-group {
-  justify-content: center; /* Center buttons */
+  justify-content: center; 
 }
 
 .button-group .btn:hover {
@@ -77,11 +90,11 @@ about p {
 
 @media (max-width: 768px) {
   .content {
-    padding: 30px 30px; /* Reduce left and right padding on smaller screens */
+    padding: 30px 30px; 
   }
 
   .about-container {
-    width: 100%; /* Full width inside the content padding */
+    width: 100%; 
     text-align: center;
   }
 
@@ -94,6 +107,6 @@ about p {
   }
 
   .button-group .btn {
-    margin-right: 10px; /* Reduce margin between buttons on smaller screens */
+    margin-right: 10px; 
   }
 }

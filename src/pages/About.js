@@ -6,10 +6,10 @@ import resume from '../assets/images/Yassine_Ouhni_Resume.pdf'; // Adjust the pa
 
 const About = () => {
   return (
-    <div className="content">
+    <div className="content d-flex align-items-center justify-content-center">
       <Container className="about-container mt-5">
-        <Row className="align-items-center mt-4">
-          <Col md={6} className="text-center">
+        <Row className="align-items-center justify-content-center text-center mt-4">
+          <Col md={6}>
             <img src={profilePhoto} alt="Profile" className="about-image" />
           </Col>
           <Col md={6}>

@@ -10,16 +10,13 @@ html, body {
   min-height: 100vh;
 }
 
-/* Styles for the main content area */
 .content {
   flex: 1;
   display: flex;
   padding: 30px;
   flex-direction: column;
-  /* min-height: 100vh; */
 }
 
-/* Footer styles */
 .footer {
   background-color: #222831;
   color: white;
@@ -33,7 +30,7 @@ html, body {
 
 .footer p {
   margin: 0;
-  font-size: 1.4rem; /* Increase the font size */
+  font-size: 1.4rem; 
 }
 
 .footer .social-links {
@@ -42,7 +39,7 @@ html, body {
 
 .footer .social-links a {
   color: white;
-  margin: 0 25px; /* Increase margin for more space */
+  margin: 0 25px; 
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -53,6 +50,6 @@ html, body {
 }
 
 .footer .social-icon {
-  margin-right: 8px; /* Add space between icon and text */
-  font-size: 2.2rem; /* Adjust icon size */
+  margin-right: 8px; 
+  font-size: 2.2rem; 
 }
