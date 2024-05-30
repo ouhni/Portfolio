@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.007fd6af.css",
+    "main.js": "/portfolio/static/js/main.33fd6f47.js",
+    "static/media/Yassine_Profile_2_Photo.png": "/portfolio/static/media/Yassine_Profile_2_Photo.0c87089b20221386a6ea.png",
+    "static/media/Yassine_Profile_Photo.png": "/portfolio/static/media/Yassine_Profile_Photo.e1d7d59487b8c73f8fe3.png",
+    "static/media/Memory_Game_Pic_3.png": "/portfolio/static/media/Memory_Game_Pic_3.6e167a7d39806daa7b58.png",
+    "static/media/Memory_Game_Pic_2.png": "/portfolio/static/media/Memory_Game_Pic_2.3f0a241e6f2d4aaaa681.png",
+    "static/media/Memory_Game_Pic_1.png": "/portfolio/static/media/Memory_Game_Pic_1.a44cc82797b3d4274bd2.png",
+    "static/media/Yassine_Ouhni_Resume.pdf": "/portfolio/static/media/Yassine_Ouhni_Resume.066b2c0c501b3b987e46.pdf",
+    "static/media/Generate_Random_Quotes_Pic_1.png": "/portfolio/static/media/Generate_Random_Quotes_Pic_1.989600e2f1910182cd0a.png",
+    "static/media/Generate_Random_Quotes_Pic_2.png": "/portfolio/static/media/Generate_Random_Quotes_Pic_2.9739649f0f25fb4b2a58.png",
+    "static/media/Generate_Random_Quotes_Pic_3.png": "/portfolio/static/media/Generate_Random_Quotes_Pic_3.425c465de056918c2804.png",
+    "static/media/Employee_Pic_2.png": "/portfolio/static/media/Employee_Pic_2.522214fdc0357ba2dc81.png",
+    "static/media/BMI_Calculator_Pic_2.png": "/portfolio/static/media/BMI_Calculator_Pic_2.104e7bf9403ce1077f99.png",
+    "static/media/Employee_Pic_1.png": "/portfolio/static/media/Employee_Pic_1.6e232e4548d13f41f968.png",
+    "static/media/Bookmark_Pic_2.png": "/portfolio/static/media/Bookmark_Pic_2.9e2d44ac9c48dd90849b.png",
+    "static/media/Bookmark_Pic_1.png": "/portfolio/static/media/Bookmark_Pic_1.2d362b8605b7fdf9bf67.png",
+    "static/media/BMI_Calculator_Pic_1.png": "/portfolio/static/media/BMI_Calculator_Pic_1.0e6729b43c47db926d45.png",
+    "index.html": "/portfolio/index.html",
+    "main.007fd6af.css.map": "/portfolio/static/css/main.007fd6af.css.map",
+    "main.33fd6f47.js.map": "/portfolio/static/js/main.33fd6f47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.007fd6af.css",
+    "static/js/main.33fd6f47.js"
+  ]
+}
